@@ -1,14 +1,13 @@
 body {
     
+    /* for use of background img */
     
     /* background-image: url("back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; */
-
-
+    
     background: #F0F0F0;
-
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
