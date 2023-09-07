@@ -1,0 +1,59 @@
+body {
+    
+    
+    /* background-image: url("back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+
+    background: #F0F0F0;
+
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.user-container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0px 0px 50px 0px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+
+#imgdiv {
+    border-radius: 12px;
+    background: white;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#imgdiv img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+#imgdiv:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
