@@ -19,7 +19,7 @@
         <div class="product-list">
             {% for product in top_10_products %}
             <div class="product-item">
-                <div id = "imgdiv">
+                <div id="imgdiv">
                     <img src="{{ product.image_link }}" alt="{{ product.product_name }}">
                 </div>
                 <div>
@@ -30,14 +30,18 @@
         </div>
 
         {% for user_id, rankings in rankings_dict.items() %}
-        
+
         <div class="user-container">
             <h2>Recently viewed products of user {{ user_id }}</h2>
             <div class="product-list">
                 {% for ranking in rankings %}
                 <div class="product-item">
-                    <img src="{{ ranking.image_link }}" alt="{{ ranking.product_name }}">
-                    <p>{{ ranking.product_name }}</p>
+                    <div id="imgdiv">
+                        <img src="{{ ranking.image_link }}" alt="{{ ranking.product_name }}">
+                    </div>
+                    <div>
+                        <p>{{ ranking.product_name }}</p>
+                    </div>
                 </div>
                 {% endfor %}
             </div>
